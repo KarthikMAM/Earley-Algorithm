@@ -1,5 +1,5 @@
 rules = {
-    "ROOT": [["S", "end"]],
+    "ROOT": [["S"]],
     "S": [
         ["NP", "VP"],
         ["aux", "NP", "VP"],
@@ -23,13 +23,12 @@ rules = {
         ["VP", "PP"]
     ],
     "PP": [
-        ["preposition", "NP"]
+        ["prepos", "NP"]
     ],
     "det": {"that", "this", "a"},
-    "noun": {"flight", "meal", "money", "gift"},
-    "verb": {"book", "include", "prefer"},
+    "noun": {"flight", "meal", "money", "gift", "astronomers", "stars", "ears", "world", "india", "me"},
+    "verb": {"book", "include", "prefer", "saw", "hello"},
     "pronoun": {"i", "she", "me"},
     "aux": {"does"},
-    "preposition": {"from", "to", "on", "near", "through"},
-    "end": {"$"}
+    "prepos": {"from", "to", "on", "near", "through", "with"}
 }
